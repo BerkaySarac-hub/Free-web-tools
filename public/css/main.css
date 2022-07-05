@@ -1,0 +1,103 @@
+* ,*::after{
+    padding: 0;
+    margin: 0;
+    font-family: 'PT Sans', sans-serif;
+}
+#slogan{
+    font-family: 'Old Standard TT', serif;
+    font-size: 1.4rem;
+    margin-top: 1.7rem;
+}
+header{
+    width: 93%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+}
+
+header div{
+    display: inline;
+}
+header h1{
+    font-size: 3.3rem;
+}
+.search-area{
+    margin-right: 0.7rem;
+}
+#search-box{
+    border: none;
+    outline: none;
+    border-bottom: 0.7px solid gray;
+    
+    padding: 2.5px;
+    font-size: 1.2rem;
+}
+.bold-txt{
+    font-size: 1.2rem;
+    font-weight: 600;
+    
+}
+main{
+    display: inline-flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+.tool-area{
+    width: 300px;
+    transition: all .3s;
+    text-align: center;
+    margin-left: 1.1rem;
+    padding: .6rem;
+}
+.tool-area img{
+    width: 100%;
+}
+.tool-description{
+    text-align: left;
+    color: black;
+}
+.tool-area a{
+    text-decoration: none;
+   
+}
+.tool-area:hover{
+    opacity: .7;
+    border: .7px solid silver;
+    border-radius: 7px;
+}
+.tool-header{
+    color: black;
+    text-decoration: none;
+}
+.lang-btn{
+    border: 1px solid black;
+}
+.login-btn{
+    border: 1px solid black;
+    margin-top: .9rem;
+}
+.btn{
+    padding: 5px;
+}
+.footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+aside{
+    float: right;
+    width: 10%;
+}
+aside h3{
+    color: blue;
+}
+aside p,a{
+    color: black;
+}
+aside p{
+    font-size: 1.3rem;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <%= title %>
+    </title>
+</head>
+
+<body>
+    <header>
+        <h1 id="project-header">FREE WEB TOOLS</h1>
+        <h3 id="tool-header">
+
+            <%= tools.tool_name %>
+        </h3>
+        <div class="dropdowns">
+            <div class="dropdown">
+                <button class="btn btn-sm login-btn dropdown-toggle" type="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">Giriş yap / Kayıt ol</button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"> <a class="dropdown-item" href="">Kayıt
+                        Ol</a>
+                    <div class="dropdown-divider"></div><a class="dropdown-item" href="">Giriş yap</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="btn lang-btn mt-3 dropdown-toggle" type="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">DİL</button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"><a class="dropdown-item" href="">TR</a>
+                    <div class="dropdown-divider"></div><a class="dropdown-item" href="">EN</a>
+                    <div class="dropdown-divider"> </div><a class="dropdown-item" href="">DE</a>
+                </div>
+            </div>
+        </div>
+        <div class="search-area mt-3"><label class="bold-txt" for="search-box">Ara :</label>
+            <input type="search" name="search-box" id="search-box">
+        </div>
+    </header>
+    <%- body%>
+
+        <footer class="footer">
+            <p id="footer-author-sign">BRS yazılım tarafından hazırlanmıştır</p>
+
+        </footer>
+</body>
+
+</html>
