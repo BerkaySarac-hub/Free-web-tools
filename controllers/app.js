@@ -11,14 +11,33 @@ app.use(express.static("public"));
 app.use(express.static(path.join(__dirname, "public", "css")));
 app.use("/deneme-tool", (req, res) => {
   var tool_source;
-  fs.readFile(path.join("public/js/deneme.txt"), "utf-8", (err, data) => {
+  fs.readFile(path.join("public/js/deneme.js"), "utf-8", (err, data) => {
     if (err) {
       console.log(err);
       return;
     }
     tool_source = data;
   });
-  res.render("tool-ui", { tool_source: tool_source });
+  let tool_url = "deneme-tool";
+  let tools = [
+    {
+      tool_url: `/${tool_url}`,
+      tool_img: "../images/demo-img.jpg",
+      tool_name: "tool",
+      tool_description: "its tool",
+    },
+    {
+      tool_url: `/${tool_url}`,
+      tool_img: "/images/demo-img.jpg",
+      tool_name: "tool 2",
+      tool_description: "its tool 2",
+    },
+  ];
+  res.render("layout", {
+    tool_source: tool_source,
+    title: "deneme jaavascript",
+    tools: tools,
+  });
 });
 app.use("/", (req, res) => {
   let tool_url = "deneme-tool";
